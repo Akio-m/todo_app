@@ -35,7 +35,7 @@ class _TodoListState extends State<TodoList> {
   @override
   void initState() {
     super.initState();
-    if (strage.getTitleList().isEmpty) {
+    if (strage.getTitleList() == null || strage.getTitleList().isEmpty) {
       return;
     }
     List<String> titleList = strage.getTitleList().split(',');
